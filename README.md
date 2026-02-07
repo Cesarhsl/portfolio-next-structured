@@ -1,6 +1,6 @@
 # Portfólio (Next.js App Router) — versão estruturada
 
-Este projeto é uma **adaptação do projeto gerado no Lovable/Vite** para uma estrutura **Next.js (App Router)** mais leve, modular e fácil de manter.
+Este projeto é uma adaptação para uma estrutura **Next.js (App Router)** mais leve, modular e fácil de manter.
 
 ## Estrutura
 
