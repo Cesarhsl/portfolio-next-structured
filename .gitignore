@@ -11,12 +11,19 @@ node_modules
 dist
 dist-ssr
 *.local
+.next
+out
+coverage
+.turbo
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
+Thumbs.db
+.env
+.env.*
 *.suo
 *.ntvs*
 *.njsproj

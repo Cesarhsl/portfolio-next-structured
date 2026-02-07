@@ -40,13 +40,6 @@ export const SkillsSection = () => {
       ref={ref}
       className="py-24 md:py-28 relative overflow-hidden"
     >
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
-      
-      {/* Decorative elements */}
-      <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-primary/5 blur-[100px] fx-blob fx-vector" />
-      <div className="absolute bottom-20 left-10 w-96 h-96 rounded-full bg-accent/5 blur-[100px] fx-blob fx-vector" />
-
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         {/* Section header */}
         <motion.div

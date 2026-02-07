@@ -37,10 +37,13 @@ export const metadata: Metadata = {
     title: 'César Lima | Inteligência de Mercado • Dados • BI • Automação',
     description: 'Portfólio profissional de César Henrique Sousa Lima — Analista de Inteligência de Mercado.',
   },
-  themeColor: '#0a0b14',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/favicon.svg',
   },
+};
+
+export const viewport = {
+  themeColor: '#0a0b14',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

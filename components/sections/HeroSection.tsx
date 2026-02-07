@@ -64,51 +64,6 @@ export const HeroSection = () => {
       id="apresentacao"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8 md:pt-4"
     >
-      {/* Animated background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/5 to-background" />
-      
-      {/* Floating blobs */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none fx-vector">
-        <motion.div
-          className="absolute w-[600px] h-[600px] rounded-full bg-primary/10 blur-[100px] fx-blob"
-          animate={{
-            x: [0, 80, 0],
-            y: [0, -50, 0],
-            scale: [1, 1.15, 1],
-          }}
-          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-          style={{ top: "5%", left: "5%" }}
-        />
-        <motion.div
-          className="absolute w-[500px] h-[500px] rounded-full bg-accent/10 blur-[100px] fx-blob"
-          animate={{
-            x: [0, -40, 0],
-            y: [0, 60, 0],
-            scale: [1, 0.85, 1],
-          }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-          style={{ bottom: "10%", right: "10%" }}
-        />
-        <motion.div
-          className="absolute w-[350px] h-[350px] rounded-full bg-gradient-to-br from-primary/5 to-accent/5 blur-[80px] fx-blob"
-          animate={{
-            x: [0, 40, 0],
-            y: [0, -20, 0],
-            rotate: [0, 10, 0],
-          }}
-          transition={{ duration: 15, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-          style={{ top: "40%", right: "25%" }}
-        />
-      </div>
-
-      {/* Noise texture */}
-      <div 
-        className="absolute inset-0 opacity-[0.02] pointer-events-none dark:opacity-[0.03] fx-noise"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
-        }}
-      />
-
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <motion.div 
           className="max-w-4xl mx-auto text-center"
@@ -193,15 +148,15 @@ export const HeroSection = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.6 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground/70 hover:text-primary transition-colors"
+        className="absolute bottom-4 sm:bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 sm:gap-2 text-muted-foreground/70 hover:text-primary transition-colors"
       >
-        <span className="text-xs tracking-widest uppercase">Scroll</span>
+        <span className="text-[10px] sm:text-xs tracking-widest uppercase">Scroll</span>
         <motion.div
           animate={{ y: [0, 10, 0], opacity: [0.6, 1, 0.6] }}
           transition={{ duration: 1.4, repeat: Infinity, ease: "easeInOut" }}
-          className="p-2 rounded-full border border-muted-foreground/30 backdrop-blur-sm"
+          className="p-1.5 sm:p-2 rounded-full border border-muted-foreground/30 backdrop-blur-sm"
         >
-          <ChevronDown className="w-5 h-5" />
+          <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5" />
         </motion.div>
       </motion.button>
     </section>
