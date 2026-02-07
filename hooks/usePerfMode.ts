@@ -32,11 +32,12 @@ export const usePerfMode = () => {
 
     const connection = (navigator as Navigator & { connection?: { addEventListener?: (event: string, cb: () => void) => void } }).connection;
     connection?.addEventListener?.("change", update);
+    const connectionTarget = connection as unknown as EventTarget | undefined;
 
     return () => {
       mediaQuery?.removeEventListener?.("change", update);
       mediaQuery?.removeListener?.(update);
-      connection?.removeEventListener?.("change", update);
+      connectionTarget?.removeEventListener?.("change", update);
     };
   }, []);
 
