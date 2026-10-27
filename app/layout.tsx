@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { Inter, JetBrains_Mono, Space_Grotesk } from 'next/font/google';
 import './globals.css';
 import { Providers } from './providers';
@@ -8,12 +8,17 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mon
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-display' });
 
 export const metadata: Metadata = {
-  title: 'César Lima | Inteligência de Mercado • Dados • BI • Automação',
+  title: 'César Lima | Tech Lead • Dados • Integração de Sistemas • Automação',
   description:
-    'Portfólio profissional de César Henrique Sousa Lima — Analista de Inteligência de Mercado. Dashboards, automações, machine learning e pipelines com Python/PySpark.',
+    'Portfólio profissional de César Henrique Sousa Lima — Supervisor de Desenvolvimento de Software e Cientista de Dados. Pipelines, APIs, integrações, automações e machine learning com Python, Node.js/TypeScript e SQL.',
   keywords: [
+    'Tech Lead',
+    'Integração de Sistemas',
     'Inteligência de Mercado',
     'Power BI',
+    'Node.js',
+    'TypeScript',
+    'SQL',
     'Python',
     'PySpark',
     'Machine Learning',
@@ -28,14 +33,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    title: 'César Lima | Inteligência de Mercado • Dados • BI • Automação',
+    title: 'César Lima | Tech Lead • Dados • Integração de Sistemas • Automação',
     description:
-      'Portfólio profissional de César Henrique Sousa Lima — Analista de Inteligência de Mercado. Dashboards, automações, machine learning e pipelines com Python/PySpark.',
+      'Portfólio profissional de César Henrique Sousa Lima — Supervisor de Desenvolvimento de Software e Cientista de Dados. Pipelines, APIs, integrações, automações e machine learning com Python, Node.js/TypeScript e SQL.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'César Lima | Inteligência de Mercado • Dados • BI • Automação',
-    description: 'Portfólio profissional de César Henrique Sousa Lima — Analista de Inteligência de Mercado.',
+    title: 'César Lima | Tech Lead • Dados • Integração de Sistemas • Automação',
+    description: 'Portfólio profissional de César Henrique Sousa Lima — Supervisor de Desenvolvimento de Software e Cientista de Dados.',
   },
   icons: {
     icon: '/favicon.svg',

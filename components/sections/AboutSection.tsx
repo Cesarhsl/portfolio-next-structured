@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
@@ -12,17 +12,29 @@ import { staggerContainer, staggerItem, fadeInLeft, fadeInRight } from "@/hooks/
 
 const experiences = [
   {
-    role: "Analista de Inteligência de Mercado",
+    role: "Supervisor de Desenvolvimento de Software",
     company: "Moto Clube Honda",
-    period: "Atual",
+    period: "06/2026 – Atual",
     location: "Feira de Santana - BA",
     current: true,
     bullets: [
-      "Desenvolvimento de dashboards estratégicos para tomada de decisão",
-      "Análises preditivas com Python (Pandas, NumPy, PySpark)",
-      "Monitoramento de KPIs",
-      "Suporte a marketing e vendas com insights",
-      "Otimização de processos com automações em BI",
+      "Liderança técnica do time de desenvolvimento: prioridades, acompanhamento de entregas e conexão entre dados, sistemas e objetivos do negócio",
+      "Construção de pipelines, APIs e integrações com Python, Node.js/TypeScript e SQL",
+      "Padronização, rastreabilidade e confiabilidade das informações entre sistemas",
+      "Apoio às áreas de negócio na definição de regras, análise de exceções e evolução de ferramentas internas",
+    ],
+  },
+  {
+    role: "Analista de Inteligência de Mercado",
+    company: "Moto Clube Honda",
+    period: "01/2025 – 05/2026",
+    location: "Feira de Santana - BA",
+    current: false,
+    bullets: [
+      "Dashboards e indicadores para comercial, financeiro e marketing (leads, contemplações, faturamento e CAC)",
+      "Consolidação, tratamento e análise de dados com Python, PySpark e SQL",
+      "Integração de dados entre Bitrix24, Asterisk, bancos de dados e fontes operacionais",
+      "Automação de validações, reduzindo inconsistências, duplicidades e retrabalho",
     ],
   },
   {
@@ -32,10 +44,9 @@ const experiences = [
     location: "Feira de Santana - BA",
     current: false,
     bullets: [
-      "Liderança de projetos de automação de processos internos",
-      "Implementação de soluções de machine learning",
-      "Pipelines de dados com PySpark e PostgreSQL",
-      "Coordenação de equipe técnica e controle de entregas",
+      "Liderança de iniciativas de ciência de dados, automação e sistemas internos",
+      "Pipelines, análises exploratórias e modelos preditivos com Python, PySpark e PostgreSQL",
+      "Coordenação de entregas técnicas e evolução dos processos operacionais",
       "Sistemas internos de apoio à decisão para diretoria",
     ],
   },
@@ -44,8 +55,8 @@ const experiences = [
 const education = [
   {
     course: "Tecnólogo em Análise e Desenvolvimento de Sistemas",
-    institution: "UNIFAN",
-    year: "2025",
+    institution: "UNIFAN - Centro Universitário Nobre",
+    year: "Concluído em 06/2025",
   },
 ];
 

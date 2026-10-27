@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
@@ -8,11 +8,11 @@ import { smoothScrollTo } from "@/hooks/useSmoothScroll";
 import { staggerContainer, staggerItem } from "@/hooks/useScrollReveal";
 
 const typewriterTexts = [
-  "Dados e BI para decisões estratégicas",
+  "Liderança técnica de times de desenvolvimento",
+  "Integração de sistemas e pipelines de dados",
   "Automação de processos orientada a dados",
-  "Inteligência de mercado aplicada ao negócio",
+  "Qualidade de dados para decisões confiáveis",
   "Machine Learning & Analytics em produção",
-  "Desenvolvimento Full Stack integrado a dados",
 ];
 
 export const HeroSection = () => {
@@ -107,9 +107,9 @@ export const HeroSection = () => {
             variants={staggerItem}
             className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            Sou um profissional graduado, com atuação prática em Dados/BI, Automação de Processos, Inteligência de Mercado,
-            Machine Learning & Analytics e Desenvolvimento Full Stack. Entrego soluções orientadas a impacto, com foco em
-            eficiência, qualidade e resultados para o negócio.
+            Cientista de dados e líder técnico com mais de 4 anos de experiência em pipelines, integrações, automação e
+            inteligência de mercado. Hoje supervisiono o time de desenvolvimento do Moto Clube Honda, conectando dados e
+            sistemas aos objetivos do negócio, com foco em consistência, qualidade e informação confiável.
           </motion.p>
 
           {/* CTA Buttons */}
